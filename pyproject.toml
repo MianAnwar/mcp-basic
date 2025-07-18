@@ -1,0 +1,17 @@
+[project]
+name = "mcp-basic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "MianAnwar", email = "miananwar.developer@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+mcp-basic = "mcp_basic:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
