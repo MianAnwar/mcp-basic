@@ -11,12 +11,9 @@ body = {
     "params": {}
 }
 
-response = requests.post(url, headers=headers, json=body)
+response = requests.post(url, headers=headers, json=body, stream=True)
 
 for line in response.iter_lines():
     if line:
-        print(line)
+        print(line.decode('utf-8'))
 
-print('--' * 20)
-print (response.status_code)
-print(response.headers)
